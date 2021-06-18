@@ -16,8 +16,7 @@ const UserSchema = new Schema({
     },
     avatar: {
         type: String,
-        required: true,
     },
 }, { timestamps: true, });
 
-module.export = User = mongoose.model('users', UserSchema);
+module.export = mongoose.model('users', UserSchema);
